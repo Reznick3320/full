@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+
+.header {
+    width: 100%;
+    
+    position: fixed;
+    background-color: #e5e5e5;
+}
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    margin: 0 auto;
+    height: 94px;
+}
+.header__social {
+    width: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.header__social-item img {
+    fill: #9094a6;
+}
+.header__socoil-lang {
+    display: flex;
+    justify-content: space-around;
+}
+.header__socoil-lang > p {
+    position: relative;
+    margin: 0 10px;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #9999a0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.header__socoil-lang > p::after {
+    content: '';
+    position: absolute;
+    display: none;
+    width: 3px;
+    height: 3px;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-100%);
+    border-radius: 100%;
+    background: #181819;
+}
+.header__socoil-lang > p:hover {
+    color: #181819;
+    transition: all 0.3s;
+}
+.header__socoil-lang > p:hover::after {
+    display: block;
+    transition: all 0.3s;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.menu-fix {
+    width: 300px;
+    position: fixed;
+    top: 150px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 15px;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu__item {
+    margin-bottom: 20px;
+}
+
+.menu__link {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #181819;
+}
+.menu__link:hover {
+    color: #9094a6;
+}
+
+
+.content {
+    padding: 150px 0 50px 350px;
+    display: block;
+}
+
+
+.content__bg {
+    width: 100%;
+    padding: 300px 15px;
+    background: url('../img/header-bg.png') center center/cover no-repeat;
+}
+.content__bg-title {
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    text-shadow: 4px 4px 3px white, -4px -4px 3px white;
+}
+
+.project {
+    padding: 60px 0 0 0;
+}
+.project__title {
+    width: 335px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 36px;
+    color: #181819;
+    position: relative;
+}
+.project__title::before, .project__title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #181819;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.project__title::after {
+    left: 0;
+}
+.project__title::before {
+    right: 0;
+}
+.project__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 59px;
+}
+.project__item {
+    width: 360px;
+}
+.project__descr {
+    margin: 17px 0 60px 0;
+    font-size: 18px;
+    text-align: center;
+    color: #181819;
+}
+
+.rectangle {
+    padding: 60px 0;
+}
+.rectangle__title {
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    color: #181819;
+}
+.rectangle__descr {
+    margin: 0 auto;
+    width: 750px;
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 23px;
+    color: #181819;
+}
+
+
+
+
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 23px 0;
+    background: #24262d;
+}
+.footer > .container {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__social {
+    width: 74px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__title {
+    font-size: 13px;
+    text-align: center;
+    color: #c9cbd0;
+    position: relative;
+}
+.footer__title::before, .footer__title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #c9cbd0;
+    border-radius: 100%;
+    top: 50%;
+    transform: translateY(-100%);
+}
+.footer__title::after {
+    left: -30px;
+}
+.footer__title::before {
+    right: -30px;
+}
